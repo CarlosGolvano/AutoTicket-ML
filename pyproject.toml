@@ -1,0 +1,22 @@
+[project]
+name = "autoticket-ml"
+version = "0.1.0"
+description = "Automatic ticket classification project."
+authors = [
+    {name = "CarlosGolvano",email = "c.golvano.diaz@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10.0,<3.11.dev0"
+dependencies = [
+    "torch (==2.5.1)",
+    "accelerate (>=1.11.0,<2.0.0)",
+    "transformers (>=4.57.1,<5.0.0)",
+    "confluent-kafka[avro]"
+]
+
+[tool.poetry]
+package-mode = false
+  
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
